@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_로그인디자인</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration:none; color:#333; display:block;}
+
+        body{
+            height:1080px;
+            background:url('img/배경이미지.jpg')center center no-repeat;
+        }
+        .box {
+            width : 450px;
+            height : 1080px;
+            background-color: #FF9100;
+            position: absolute;
+            right:0;
+        }
+        fieldset{ border:0; }
+        
+        legend {
+            position : absolute;
+            left:-9999999999px;
+        }
+        .wrap {
+            width:600px;
+            height: 850px;
+            background-color:#fff;
+            text-align:center;
+            margin: 115px 0;
+            padding: 225px 0;
+            position:absolute;
+            right: 168px;
+            box-shadow: 10px 10px 5px ;
+        }
+        
+        
+        .wrap h1{
+            text-align:center;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom:43px;
+        }
+        .wrap h1 a { color:#FF9100;}
+        .wrap label{
+            position: absolute;
+            left:-999999999px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width:500px;
+            height:65px;
+            border : 1px solod #ccc;
+            color: #ccc;
+            box-sizing : border-box;
+            margin : 15px 0;
+            padding : 20px;
+        }
+        .wrap p {
+            font-size: 14px;
+            position : absolute;
+            right: 50px;
+            color: #333;
+        }
+        button {
+            width: 200px;
+            height : 65px;
+            background-color:#FF9100;
+            border:0;
+            font-size: 20px;
+            color: #fff;
+            text-align:center;
+            margin-top:43px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="wrap">
+        <form action="" method="post">
+            
+                <h1><a href="#">WELCOME</a></h1>
+
+                <fieldset>
+                <legend>로그인 페이지</legend>
+                <div>
+                    <label for="id">USERNAME</label>
+                    <input type="text" id="id" placeholder="USERNAME"  required>
+                </div>
+
+                <div>
+                    <label for="pass">PASSWORD</label>
+                    <input type="password" id="pass" placeholder="PASSWORD" required>
+                </div>
+
+                <p>FORGOT PASSWORD?</p>
+                <button>LOGIN</button>
+           
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
